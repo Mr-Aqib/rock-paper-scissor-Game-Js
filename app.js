@@ -27,6 +27,7 @@ playerbtns.forEach((item) => {
     item.addEventListener('click', () => {
         if (!p1turn) //false 
         {
+            
            
             p1randimgsaver = getrandnum()
             p1turn = true
@@ -46,6 +47,7 @@ playerbtns.forEach((item) => {
            playerbtns[1].disabled=true
            p2img.src = `./images/${p2randimgsaver}`
         }
+        
         if(p1randimgsaver=='scissor.png' && p2randimgsaver=='scissor.png')
         {
             resulttext.innerHTML='Match Tie'
@@ -80,6 +82,8 @@ playerbtns.forEach((item) => {
         {
             resulttext.innerHTML='Paper Wins'
         }
+
+        
     })
 
 })
