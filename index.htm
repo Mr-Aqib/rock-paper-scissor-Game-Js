@@ -18,43 +18,50 @@
     <title>Rock Paper Scissor</title>
   </head>
   <body>
-    <div class="container text-center mx-auto py-4 shadow bg-transparent">
-      <h1 class="heading">Rock Paper Scissor Game</h1>
-    </div>
+    <div class="main-div positon-relative">
+      <div class="container text-center mx-auto py-4 shadow bg-transparent">
+        <h1 class="heading">Rock Paper Scissor Game</h1>
+      </div>
 
-    <div class="container my-4">
-      <div
-        class="row mx-auto d-flex flex-row align-items-center justify-content-center gap-5"
-      >
+      <div class="container my-4">
         <div
-          class="col-lg-4 shadow play1-div text-center d-flex flex-column justify-content-center align-items-center gap-3 rounded-3 p-4"
+          class="row mx-auto d-flex flex-row align-items-center justify-content-center gap-5"
         >
-          <img
-            style="width: 250px; height: 200px"
-            src="./images/paper.png"
-            alt=""
-          />
-          <button class="btn-player1 p1-btn rounded-pill">
-            Player 1
-          </button>
-        </div>
-        <div
-          class="col-lg-4 shadow play2-div text-center d-flex flex-column justify-content-center align-items-center gap-3 rounded-3 p-4"
-        >
-          <img
-            style="width: 250px; height: 200px"
-            src="./images/rock.png"
-            alt=""
-          />
-          <button class="btn-player1 p2-btn rounded-pill">
-            Player 2
-          </button>
+          <div
+            class="col-lg-4 shadow play1-div text-center d-flex flex-column justify-content-center align-items-center gap-3 rounded-3 p-4"
+          >
+            <img
+              style="width: 250px; height: 200px"
+              src="./images/paper.png"
+              alt=""
+              class="p1-img"
+            />
+            <button class="btn-player1 p-btn p1-btn rounded-pill">
+              Player 1 Turn
+            </button>
+          </div>
+          <div
+            class="col-lg-4 shadow play2-div text-center d-flex flex-column justify-content-center align-items-center gap-3 rounded-3 p-4"
+          >
+            <img
+              style="width: 250px; height: 200px"
+              src="./images/rock.png"
+              alt=""
+              class="p2-img"
+            />
+            <button class="btn-player1 p-btn p2-btn rounded-pill">
+              Player 2 Turn
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container col-lg-4 text-center result-div mx-auto py-4 shadow bg-transparent">
+      <div
+        class="container col-lg-4 text-center result-div mx-auto py-4 shadow bg-transparent"
+      >
         <h1 class="result">Result</h1>
       </div>
+    </div>
+
     <script src="./app.js"></script>
   </body>
 </html>
